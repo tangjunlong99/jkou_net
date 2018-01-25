@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+    head
+        title #{title}
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+
+        meta(name="description" content="关于一个在深圳提供虚拟现实技术支持组织的网站,这里有关于他们在深圳创业的收入来源,如何生存的故事")
+        meta(name="author" content="唐俊龙")
+
+        link(href="stylesheets/bootstrap.css" rel="stylesheet")
+        link(href="stylesheets/style.css" rel="stylesheet")
+        link(href="stylesheets/contact.css" rel="stylesheet")
+    body
+        nav.navbar.navbar-inverse.navbar-fixed-top
+            .container
+                .navbar-header
+                    button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar")
+                        span.sr-only Toggle navigation
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href="/")
+                #navbar.collapse.navbar-collapse
+                    ul.nav.navbar-nav
+                        li.active
+                            a(href="/") 首页
+                        li
+                            a(href="/income") 收入
+                        li
+                            a(href="/story") 故事
+                        li
+                            a(href="/meet") 遇见
+                        li
+                            a(href="/contact") 留言
+        block content
+        footer.container
+            p © Company 2017 中二虚拟现实技术(深圳)有限公司
+            a 粤ICP备17163302号-1
+
+        script(src="javascripts/jquery-3.2.1.min.js")
+        script(src="javascripts/bootstrap.js")
