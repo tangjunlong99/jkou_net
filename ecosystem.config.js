@@ -7,7 +7,7 @@ module.exports = {
 
     // First application
     {
-      name      : 'Jkou_WebSite',
+      name      : 'Jkou_net',
       script    : './bin/www',
       env: {
         COMMON_VARIABLE: 'true'
