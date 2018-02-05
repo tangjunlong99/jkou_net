@@ -23,23 +23,13 @@ module.exports = {
    * http://pm2.keymetrics.io/docs/usage/deployment/
    */
   deploy : {
-    production : {
-      user : 'root',
-      host : '207.246.102.255',
-      ref  : 'origin/master',
-      repo : 'git@github.com:tangjunlong99/jkou_net.git',
-      path : '/home/root/www/production',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
-    },
-    dev : {
-      user : 'node',
-      host : '212.83.163.1',
-      ref  : 'origin/master',
-      repo : 'git@github.com:repo.git',
-      path : '/var/www/development',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env dev',
-      env  : {
-        NODE_ENV: 'dev'
+      production : {
+        user : 'root',
+        host : '207.246.102.255',
+        ref  : 'origin/master',
+        repo : 'git@github.com:tangjunlong99/jkou_net.git',
+        path : '/home/root/www/production',
+        'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
       }
     }
   }
