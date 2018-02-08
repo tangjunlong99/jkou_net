@@ -27,7 +27,7 @@ module.exports = {
         production : {
             user: 'tangjunlong',
             host: '207.246.102.255',
-            ref: 'origin/master',
+            ref: 'jkou_net/master',
             repo: 'git@github.com:tangjunlong99/jkou_net.git',
             path: '/home/tangjunlong/site/deploy',
             'post-deploy': 'npm install && pm2 reload ecosystem.config.js --env production'
